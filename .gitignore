@@ -1,0 +1,11 @@
+# Distribution / packaging 
+dist/ 
+*.egg-info/
+
+# Environmental
+venv/
+env/
+
+# Cached Files
+*.pyc
+
