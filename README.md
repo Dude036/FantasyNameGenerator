@@ -1,6 +1,8 @@
 # Fantasy Names
 A Python project dedicated to generating names from various bits of fantasy
 
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 ## Installation
 
 TODO: Add this to PyPi
@@ -9,4 +11,4 @@ TODO: Add this to PyPi
 
 TODO: Describe usage here
 
-Note: Add a thing here about using a formatting tool to simplify formatting
+This project is formatted automatically with [Black](https://black.readthedocs.io/en/latest/). Prior to pushing code to master, please format your code using Black.
