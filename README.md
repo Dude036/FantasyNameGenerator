@@ -7,7 +7,7 @@ A Python project dedicated to generating names from various bits of fantasy
 
 ### pip
 
-Install FantasyNameGenerator as a package from pip using this command:
+Install [FantasyNameGenerator](https://pypi.org/project/FantasyNameGenerator/) as a package with pip using this command:
 
 `pip install FantasyNameGenerator`
 
@@ -42,6 +42,8 @@ Weapon Name Generator
 from FantasyNameGenerator.Items import Weapon 
 print(Weapon())
 var = Weapon()
+for name in Weapon():
+    print(name)
 ```
 
 Dungeon's & Dragons Aasimer Name
@@ -49,6 +51,8 @@ Dungeon's & Dragons Aasimer Name
 from FantasyNameGenerator.DnD import Aasimer 
 print(Aasimer())
 var = Aasimer()
+for name in Aasimer():
+    print(name)
 ```
 
 ### Generators
@@ -109,7 +113,45 @@ There are a few name generators included with this repo. Here are the main categ
 
 *Note: Accessing this library in the package uses the preface `DnD` for simplicity.*
 
-- Coming Soon
+- Aarakocra
+- Aasimer
+- Bugbear
+- Centaur
+- Changeling
+- Dragonborn
+- Drow
+- Duergar
+- Dwarf
+- Elf
+- Fetchling
+- Firbolg
+- Genasi
+- Gith
+- Gnome
+- Goblin
+- Goliath
+- Halfling
+- Hobgoblin
+- Human
+- Half-Elf
+- Half-Orc
+- Kalashtar
+- Kenku
+- Kobold
+- Lizardfolk
+- Loxodon
+- Minotaur
+- Orc
+- Shifter
+- Simic Hybrid
+- Svirfneblin
+- Tabaxi
+- Tiefling
+- Tortle
+- Triton
+- Vedalken
+- Warforged
+- Yuan-ti
 
 ## Contributing
 
