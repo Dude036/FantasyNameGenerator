@@ -6,6 +6,9 @@ dist/
 venv/
 env/
 
+# Testing
+.tox/
+
 # Cached Files
 *.pyc
 
