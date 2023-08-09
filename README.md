@@ -55,6 +55,15 @@ for name in Aasimer():
     print(name)
 ```
 
+Pathfinder Human Male Name
+```python
+from FantasyNameGenerator.Pathfinder import Human 
+print(Human.generate(Human.HumanType.Male))
+var = Human.generate(Human.HumanType.Male)
+for name in Human():
+    print(name)
+```
+
 ### Generators
 
 There are a few name generators included with this repo. Here are the main categories and what they contain:
@@ -164,7 +173,11 @@ There are a few things you need to do prior to making a pull request:
 
 #### Unit Test Coverage
 This project uses pytest integrated with Tox to run unit tests.
-To run unit test coverage and 
+To run unit test coverage make sure you have Tox installed, and then run the following command:
+`tox`
+
+Tox runs 4 different versions of python to ensure backwards capability, 3.8, 3.9, 3.10, & 3.11.
+To run these make sure you have the appropriate version of python installed.
 
 #### Black code formatting
 This project is formatted automatically with [Black](https://black.readthedocs.io/en/latest/).
