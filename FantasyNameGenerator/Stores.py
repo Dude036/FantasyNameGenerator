@@ -1,5 +1,5 @@
 from .Base import Store
-from enum import StrEnum, auto
+from enum import Enum, auto
 from random import choice, randrange
 
 
@@ -1013,7 +1013,7 @@ class Alchemist(Store):
 
 
 class Restaurant(Store):
-    class RestaurantType(StrEnum):
+    class RestaurantType(Enum):
         Diner = auto()
         French = auto()
         Tavern = auto()

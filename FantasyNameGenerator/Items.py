@@ -1,10 +1,10 @@
 from .Base import Item
-from enum import StrEnum, auto
+from enum import Enum, auto
 from random import choice, randrange
 
 
 class Book(Item):
-    class BookType(StrEnum):
+    class BookType(Enum):
         Children = auto()
         Drama = auto()
         Fiction = auto()
@@ -5371,7 +5371,7 @@ class Book(Item):
 
 
 class Relic(Item):
-    class RelicType(StrEnum):
+    class RelicType(Enum):
         Armor = auto()
         Book = auto()
         Potion = auto()
@@ -7998,7 +7998,7 @@ class Relic(Item):
 
 
 class Weapon(Item):
-    class WeaponType(StrEnum):
+    class WeaponType(Enum):
         Axe = auto()
         Bow = auto()
         Dagger = auto()

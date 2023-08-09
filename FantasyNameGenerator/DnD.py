@@ -1,5 +1,5 @@
 from .Base import Character
-from enum import StrEnum, auto
+from enum import Enum, auto
 from random import choice, randrange
 
 
@@ -77,7 +77,7 @@ class Aarakocra(Character):
 
 
 class Aasimer(Character):
-    class AasimerType(StrEnum):
+    class AasimerType(Enum):
         Male = auto()
         Female = auto()
 
@@ -338,7 +338,7 @@ class Bugbear(Character):
 
 
 class Centaur(Character):
-    class CentaurType(StrEnum):
+    class CentaurType(Enum):
         Male = auto()
         Female = auto()
 
@@ -746,7 +746,7 @@ class Changeling(Character):
 
 
 class Dragonborn(Character):
-    class DragonbornType(StrEnum):
+    class DragonbornType(Enum):
         Male = auto()
         Female = auto()
 
@@ -1150,7 +1150,7 @@ class Dragonborn(Character):
 
 
 class Drow(Character):
-    class DrowType(StrEnum):
+    class DrowType(Enum):
         Male = auto()
         Female = auto()
 
@@ -1573,7 +1573,7 @@ class Drow(Character):
 
 
 class Duergar(Character):
-    class DuergarType(StrEnum):
+    class DuergarType(Enum):
         Male = auto()
         Female = auto()
 
@@ -2053,7 +2053,7 @@ class Duergar(Character):
 
 
 class Dwarf(Character):
-    class DwarfType(StrEnum):
+    class DwarfType(Enum):
         Male = auto()
         Female = auto()
 
@@ -2508,7 +2508,7 @@ class Dwarf(Character):
 
 
 class Elf(Character):
-    class ElfType(StrEnum):
+    class ElfType(Enum):
         Male = auto()
         Female = auto()
 
@@ -3006,7 +3006,7 @@ class Elf(Character):
 
 
 class Fetchling(Character):
-    class FetchlingType(StrEnum):
+    class FetchlingType(Enum):
         Male = auto()
         Female = auto()
 
@@ -3078,7 +3078,7 @@ class Fetchling(Character):
 
 
 class Firbolg(Character):
-    class FirbolgType(StrEnum):
+    class FirbolgType(Enum):
         Male = auto()
         Female = auto()
 
@@ -3311,7 +3311,7 @@ class Firbolg(Character):
 
 
 class Genasi(Character):
-    class GenasiType(StrEnum):
+    class GenasiType(Enum):
         Air = auto()
         Water = auto()
         Earth = auto()
@@ -3710,7 +3710,7 @@ class Genasi(Character):
 
 
 class Gith(Character):
-    class GithType(StrEnum):
+    class GithType(Enum):
         Male = auto()
         Female = auto()
 
@@ -3953,7 +3953,7 @@ class Gith(Character):
 
 
 class Gnome(Character):
-    class GnomeType(StrEnum):
+    class GnomeType(Enum):
         Male = auto()
         Female = auto()
 
@@ -4285,7 +4285,7 @@ class Gnome(Character):
 
 
 class Goblin(Character):
-    class GoblinType(StrEnum):
+    class GoblinType(Enum):
         Male = auto()
         Female = auto()
 
@@ -4752,7 +4752,7 @@ class Goblin(Character):
 
 
 class Goliath(Character):
-    class GoliathType(StrEnum):
+    class GoliathType(Enum):
         Male = auto()
         Female = auto()
 
@@ -5181,7 +5181,7 @@ class Goliath(Character):
 
 
 class Halfling(Character):
-    class HalflingType(StrEnum):
+    class HalflingType(Enum):
         Male = auto()
         Female = auto()
 
@@ -5423,7 +5423,7 @@ class Halfling(Character):
 
 
 class Hobgoblin(Character):
-    class HobgoblinType(StrEnum):
+    class HobgoblinType(Enum):
         Male = auto()
         Female = auto()
 
@@ -5555,7 +5555,7 @@ class Hobgoblin(Character):
 
 
 class Human(Character):
-    class HumanType(StrEnum):
+    class HumanType(Enum):
         Male = auto()
         Female = auto()
 
@@ -12902,7 +12902,7 @@ class Human(Character):
 
 
 class HalfElf(Character):
-    class HalfElfType(StrEnum):
+    class HalfElfType(Enum):
         Male = auto()
         Female = auto()
 
@@ -13425,7 +13425,7 @@ class HalfElf(Character):
 
 
 class HalfOrc(Character):
-    class HalfOrcType(StrEnum):
+    class HalfOrcType(Enum):
         Male = auto()
         Female = auto()
 
@@ -13762,7 +13762,7 @@ class HalfOrc(Character):
 
 
 class Kalashtar(Character):
-    class KalashtarType(StrEnum):
+    class KalashtarType(Enum):
         Male = auto()
         Female = auto()
 
@@ -14283,7 +14283,7 @@ class Kenku(Character):
 
 
 class Kobold(Character):
-    class KoboldType(StrEnum):
+    class KoboldType(Enum):
         Male = auto()
         Female = auto()
 
@@ -14513,7 +14513,7 @@ class Kobold(Character):
 
 
 class Lizardfolk(Character):
-    class LizardfolkType(StrEnum):
+    class LizardfolkType(Enum):
         Male = auto()
         Female = auto()
 
@@ -14743,7 +14743,7 @@ class Lizardfolk(Character):
 
 
 class Loxodon(Character):
-    class LoxodonType(StrEnum):
+    class LoxodonType(Enum):
         Male = auto()
         Female = auto()
 
@@ -14880,7 +14880,7 @@ class Loxodon(Character):
 
 
 class Minotaur(Character):
-    class MinotaurType(StrEnum):
+    class MinotaurType(Enum):
         Male = auto()
         Female = auto()
 
@@ -15191,7 +15191,7 @@ class Minotaur(Character):
 
 
 class Orc(Character):
-    class OrcType(StrEnum):
+    class OrcType(Enum):
         Male = auto()
         Female = auto()
 
@@ -15576,7 +15576,7 @@ class Orc(Character):
 
 
 class Shifter(Character):
-    class ShifterType(StrEnum):
+    class ShifterType(Enum):
         Male = auto()
         Female = auto()
 
@@ -15848,7 +15848,7 @@ class Shifter(Character):
 
 
 class SimicHybrid(Character):
-    class SimicHybridType(StrEnum):
+    class SimicHybridType(Enum):
         Male = auto()
         Female = auto()
 
@@ -16076,7 +16076,7 @@ class SimicHybrid(Character):
 
 
 class Svirfneblin(Character):
-    class SvirfneblinType(StrEnum):
+    class SvirfneblinType(Enum):
         Male = auto()
         Female = auto()
 
@@ -16703,7 +16703,7 @@ class Tabaxi(Character):
 
 
 class Tiefling(Character):
-    class TieflingType(StrEnum):
+    class TieflingType(Enum):
         Male = auto()
         Female = auto()
 
@@ -17052,7 +17052,7 @@ class Tortle(Character):
 
 
 class Triton(Character):
-    class TritonType(StrEnum):
+    class TritonType(Enum):
         Male = auto()
         Female = auto()
 
@@ -17183,7 +17183,7 @@ class Triton(Character):
 
 
 class Vedalken(Character):
-    class VedalkenType(StrEnum):
+    class VedalkenType(Enum):
         Male = auto()
         Female = auto()
 
