@@ -116,7 +116,51 @@ There are a few name generators included with this repo. Here are the main categ
 
 ### Pathfinder Races
 
-- Coming Soon
+- Anadi
+- Android
+- Automaton
+- Azarketi
+- Catfolk
+- Conrasu
+- Dhampir
+- Dwarf
+- Elf
+- Fetchling
+- Fleshwarp
+- Ghoran
+- Gillman
+- Gnoll
+- Gnome
+- Goblin
+- Goloma
+- Grippli
+- Halfling
+- Hobgoblin
+- Human
+- Ifrit
+- Kashrishi
+- Kitsune
+- Kobold
+- Leshy
+- Lizardfolk
+- Merfolk
+- Nagaji
+- Orc
+- Oread
+- Poppet
+- Ratfolk
+- Shisk
+- Shoony
+- Skeleton
+- Sprite
+- Strix
+- Suli
+- Sylph
+- Tengu
+- Tian
+- Undine
+- Vanara
+- Vishkanya
 
 ### Dungeons & Dragons Races
 
