@@ -303,6 +303,12 @@ class Aasimer(Character):
         s4 = ["", "", "", "l", "m", "n", "r"]
 
         name = ""
+
+        if gender is not Aasimer.AasimerType and gender in Aasimer.AasimerType.__members__:
+            gender = Aasimer.AasimerType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Aasimer.AasimerType:
             gender = choice(list(Aasimer.AasimerType))
         if gender == Aasimer.AasimerType.Male:
@@ -666,6 +672,11 @@ class Centaur(Character):
         ]
 
         name = ""
+        if gender is not Centaur.CentaurType and gender in Centaur.CentaurType.__members__:
+            gender = Centaur.CentaurType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Centaur.CentaurType:
             gender = choice(list(Centaur.CentaurType))
         if gender == Centaur.CentaurType.Male:
@@ -1132,6 +1143,11 @@ class Dragonborn(Character):
         ]
 
         name = ""
+        if gender is not Dragonborn.DragonbornType and gender in Dragonborn.DragonbornType.__members__:
+            gender = Dragonborn.DragonbornType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Dragonborn.DragonbornType:
             gender = choice(list(Dragonborn.DragonbornType))
         if gender == Dragonborn.DragonbornType.Male:
@@ -1549,6 +1565,11 @@ class Drow(Character):
         s4 = ["", "", "", "", "", "c", "d", "h", "n", "rc", "s", "sh", "t", "th", "v", "x"]
 
         name = ""
+        if gender is not Drow.DrowType and gender in Drow.DrowType.__members__:
+            gender = Drow.DrowType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Drow.DrowType:
             gender = choice(list(Drow.DrowType))
         if gender == Drow.DrowType.Male:
@@ -2038,6 +2059,11 @@ class Duergar(Character):
         ]
 
         name = ""
+        if gender is not Duergar.DuergarType and gender in Duergar.DuergarType.__members__:
+            gender = Duergar.DuergarType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Duergar.DuergarType:
             gender = choice(list(Duergar.DuergarType))
         if gender == Duergar.DuergarType.Male:
@@ -2484,9 +2510,14 @@ class Dwarf(Character):
         ]
 
         name = ""
+        if gender is not Dwarf.DwarfType and gender in Dwarf.DwarfType.__members__:
+            gender = Dwarf.DwarfType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Dwarf.DwarfType:
             gender = choice(list(Dwarf.DwarfType))
-        if gender == Dwarf.DwarfType.Male:
+        if gender == Dwarf.DwarfType.Male or gender.lower() == "male":
             name += choice(m1) + choice(m2) + choice(m3)
             if randrange(2) == 1:
                 name += choice(m2) + choice(m3)
@@ -2982,6 +3013,11 @@ class Elf(Character):
         s4 = ["", "", "h", "l", "m", "n", "r", "s"]
 
         name = ""
+        if gender is not Elf.ElfType and gender in Elf.ElfType.__members__:
+            gender = Elf.ElfType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Elf.ElfType:
             gender = choice(list(Elf.ElfType))
         if gender == Elf.ElfType.Male:
@@ -3060,6 +3096,11 @@ class Fetchling(Character):
         m4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "h", "l", "m", "n", "s", "x"]
 
         name = ""
+        if gender is not Fetchling.FetchlingType and gender in Fetchling.FetchlingType.__members__:
+            gender = Fetchling.FetchlingType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Fetchling.FetchlingType:
             gender = choice(list(Fetchling.FetchlingType))
         if gender == Fetchling.FetchlingType.Male:
@@ -3295,6 +3336,11 @@ class Firbolg(Character):
         ]
 
         name = ""
+        if gender is not Firbolg.FirbolgType and gender in Firbolg.FirbolgType.__members__:
+            gender = Firbolg.FirbolgType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Firbolg.FirbolgType:
             gender = choice(list(Firbolg.FirbolgType))
         if gender == Firbolg.FirbolgType.Male:
@@ -3697,6 +3743,11 @@ class Genasi(Character):
             "Zephyr",
         ]
 
+        if gender is not Genasi.GenasiType and gender in Genasi.GenasiType.__members__:
+            gender = Genasi.GenasiType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Genasi.GenasiType:
             gender = choice(list(Genasi.GenasiType))
         if gender == Genasi.GenasiType.Air:
@@ -3937,6 +3988,11 @@ class Gith(Character):
         ]
 
         name = ""
+        if gender is not Gith.GithType and gender in Gith.GithType.__members__:
+            gender = Gith.GithType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Gith.GithType:
             gender = choice(list(Gith.GithType))
         if gender == Gith.GithType.Male:
@@ -4267,6 +4323,11 @@ class Gnome(Character):
         ]
 
         name = ""
+        if gender is not Gnome.GnomeType and gender in Gnome.GnomeType.__members__:
+            gender = Gnome.GnomeType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Gnome.GnomeType:
             gender = choice(list(Gnome.GnomeType))
         if gender == Gnome.GnomeType.Male:
@@ -4731,6 +4792,11 @@ class Goblin(Character):
         ]
 
         name = ""
+        if gender is not Goblin.GoblinType and gender in Goblin.GoblinType.__members__:
+            gender = Goblin.GoblinType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Goblin.GoblinType:
             gender = choice(list(Goblin.GoblinType))
         if gender == Goblin.GoblinType.Male:
@@ -5163,6 +5229,11 @@ class Goliath(Character):
         ]
 
         name = ""
+        if gender is not Goliath.GoliathType and gender in Goliath.GoliathType.__members__:
+            gender = Goliath.GoliathType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Goliath.GoliathType:
             gender = choice(list(Goliath.GoliathType))
         if gender == Goliath.GoliathType.Male:
@@ -5412,6 +5483,11 @@ class Halfling(Character):
         ]
 
         name = ""
+        if gender is not Halfling.HalflingType and gender in Halfling.HalflingType.__members__:
+            gender = Halfling.HalflingType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Halfling.HalflingType:
             gender = choice(list(Halfling.HalflingType))
         if gender == Halfling.HalflingType.Male:
@@ -5537,6 +5613,11 @@ class Hobgoblin(Character):
         f4 = ["", "", "", "", "", "", "", "", "", "", "f", "h", "l", "m", "n", "s", "t"]
 
         name = ""
+        if gender is not Hobgoblin.HobgoblinType and gender in Hobgoblin.HobgoblinType.__members__:
+            gender = Hobgoblin.HobgoblinType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Hobgoblin.HobgoblinType:
             gender = choice(list(Hobgoblin.HobgoblinType))
         if gender == Hobgoblin.HobgoblinType.Male:
@@ -12887,6 +12968,12 @@ class Human(Character):
         ]
 
         name = ""
+
+        if gender is not Human.HumanType and gender in Human.HumanType.__members__:
+            gender = Human.HumanType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Human.HumanType:
             gender = choice(list(Human.HumanType))
         if gender == Human.HumanType.Male:
@@ -13401,6 +13488,12 @@ class HalfElf(Character):
         s4 = ["", "", "", "", "", "", "", "ht", "l", "m", "n", "nd", "nn", "r", "rks", "rt", "s", "th", "w", "ys"]
 
         name = ""
+        if gender is not HalfElf.HalfElfType and gender in HalfElf.HalfElfType.__members__:
+            gender = HalfElf.HalfElfType[gender.capitalize()]
+        else:
+            gender = None
+
+
         if gender is None or gender not in HalfElf.HalfElfType:
             gender = choice(list(HalfElf.HalfElfType))
         if gender == HalfElf.HalfElfType.Male:
@@ -13738,6 +13831,11 @@ class HalfOrc(Character):
         s4 = ["", "", "", "", "", "ch", "d", "k", "ld", "lm", "m", "n", "r", "shky", "tsky", "v", "x", "z"]
 
         name = ""
+        if gender is not HalfOrc.HalfOrcType and gender in HalfOrc.HalfOrcType.__members__:
+            gender = HalfOrc.HalfOrcType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in HalfOrc.HalfOrcType:
             gender = choice(list(HalfOrc.HalfOrcType))
         if gender == HalfOrc.HalfOrcType.Male:
@@ -13779,6 +13877,11 @@ class Kalashtar(Character):
         f4 = ["", "", "", "", "", "d", "l", "lk", "n", "ns", "nt", "s", "ss", "sh", "th"]
 
         name = ""
+        if gender is not Kalashtar.KalashtarType and gender in Kalashtar.KalashtarType.__members__:
+            gender = Kalashtar.KalashtarType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Kalashtar.KalashtarType:
             gender = choice(list(Kalashtar.KalashtarType))
         if gender == Kalashtar.KalashtarType.Male:
@@ -14495,6 +14598,11 @@ class Kobold(Character):
         m4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "h", "k", "l", "n", "m", "r", "s"]
 
         name = ""
+        if gender is not Kobold.KoboldType and gender in Kobold.KoboldType.__members__:
+            gender = Kobold.KoboldType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Kobold.KoboldType:
             gender = choice(list(Kobold.KoboldType))
         if gender == Kobold.KoboldType.Male:
@@ -14725,6 +14833,11 @@ class Lizardfolk(Character):
         m4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "h", "k", "l", "n", "m", "r", "s"]
 
         name = ""
+        if gender is not Lizardfolk.LizardfolkType and gender in Lizardfolk.LizardfolkType.__members__:
+            gender = Lizardfolk.LizardfolkType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Lizardfolk.LizardfolkType:
             gender = choice(list(Lizardfolk.LizardfolkType))
         if gender == Lizardfolk.LizardfolkType.Male:
@@ -14862,6 +14975,11 @@ class Loxodon(Character):
         f4 = ["j", "l", "n", "r", "v", "z", "", "", "", "", "", "j", "l", "m", "n", "r", "s", "y"]
 
         name = ""
+        if gender is not Loxodon.LoxodonType and gender in Loxodon.LoxodonType.__members__:
+            gender = Loxodon.LoxodonType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Loxodon.LoxodonType:
             gender = choice(list(Loxodon.LoxodonType))
         if gender == Loxodon.LoxodonType.Male:
@@ -15176,6 +15294,11 @@ class Minotaur(Character):
         ]
 
         name = ""
+        if gender is not Minotaur.MinotaurType and gender in Minotaur.MinotaurType.__members__:
+            gender = Minotaur.MinotaurType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Minotaur.MinotaurType:
             gender = choice(list(Minotaur.MinotaurType))
         if gender == Minotaur.MinotaurType.Male:
@@ -15552,6 +15675,11 @@ class Orc(Character):
         s4 = ["d", "hn", "hd", "k", "l", "m", "n", "r", "s", "sh", "t", "th"]
 
         name = ""
+        if gender is not Orc.OrcType and gender in Orc.OrcType.__members__:
+            gender = Orc.OrcType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Orc.OrcType:
             gender = choice(list(Orc.OrcType))
         if gender == Orc.OrcType.Male:
@@ -15838,6 +15966,11 @@ class Shifter(Character):
             "Winter",
         ]
 
+        if gender is not Shifter.ShifterType and gender in Shifter.ShifterType.__members__:
+            gender = Shifter.ShifterType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Shifter.ShifterType:
             gender = choice(list(Shifter.ShifterType))
         if gender == Shifter.ShifterType.Male:
@@ -16064,6 +16197,11 @@ class SimicHybrid(Character):
         ]
 
         name = ""
+        if gender is not SimicHybrid.SimicHybridType and gender in SimicHybrid.SimicHybridType.__members__:
+            gender = SimicHybrid.SimicHybridType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in SimicHybrid.SimicHybridType:
             gender = choice(list(SimicHybrid.SimicHybridType))
         if gender == SimicHybrid.SimicHybridType:
@@ -16474,6 +16612,11 @@ class Svirfneblin(Character):
         ]
 
         name = ""
+        if gender is not Svirfneblin.SvirfneblinType and gender in Svirfneblin.SvirfneblinType.__members__:
+            gender = Svirfneblin.SvirfneblinType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Svirfneblin.SvirfneblinType:
             gender = choice(list(Svirfneblin.SvirfneblinType))
         if gender == Svirfneblin.SvirfneblinType.Male:
@@ -16954,6 +17097,11 @@ class Tiefling(Character):
         s4 = ["", "", "", "", "", "", "", "", "", "", "d", "ld", "lt", "m", "n", "nd", "r", "rd", "s", "t", "th"]
 
         name = ""
+        if gender is not Tiefling.TieflingType and gender in Tiefling.TieflingType.__members__:
+            gender = Tiefling.TieflingType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Tiefling.TieflingType:
             gender = choice(list(Tiefling.TieflingType))
         if gender == Tiefling.TieflingType.Male:
@@ -17159,6 +17307,11 @@ class Triton(Character):
         s4 = ["d", "g", "l", "ll", "ln", "lm", "lv", "m", "mn", "n", "ns", "nz", "r", "rs", "s", "sn", "x", "z"]
 
         name = ""
+        if gender is not Triton.TritonType and gender in Triton.TritonType.__members__:
+            gender = Triton.TritonType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Triton.TritonType:
             gender = choice(list(Triton.TritonType))
         if gender == Triton.TritonType.Male:
@@ -17337,6 +17490,11 @@ class Vedalken(Character):
         ]
 
         name = ""
+        if gender is not Vedalken.VedalkenType and gender in Vedalken.VedalkenType.__members__:
+            gender = Vedalken.VedalkenType[gender.capitalize()]
+        else:
+            gender = None
+
         if gender is None or gender not in Vedalken.VedalkenType:
             gender = choice(list(Vedalken.VedalkenType))
         if gender == Vedalken.VedalkenType.Male:
