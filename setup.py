@@ -6,7 +6,7 @@ with open(os.path.join(os.path.dirname(__file__), "README.md"), encoding="UTF-8"
 
 setup(
     name="FantasyNameGenerator",
-    version="0.0.5",
+    version="0.0.6",
     description="A name generator from various worlds of fantasy",
     long_description=README,
     long_description_content_type="text/markdown",
